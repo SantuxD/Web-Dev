@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridMasterClass</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            
+
+        }
+        .container{
+            background-color: #fff;
+            border: 2px solid #333;
+            margin-bottom: 20px;
+            padding: 10px;
+            
+        }
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            background-color: #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            grid-template-columns: repeat(3, 1fr);
+
+
+        }
+        .item{
+            border-color: #db4d34;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .item:nth-child(even){
+            border-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid master class Demo</h1>
+    <div class="container">
+<h2>1.Basic Grid(3 * 3)</h2>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</div>
+</body>
+</html>

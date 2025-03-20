@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown navbar</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: burlywood;
+        margin: 0;
+        padding: 20px;
+    }
+    .nav3{
+        background-color: aqua;
+        padding: 20px;
+    }
+.nav3 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav3 a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px;
+    display: block;
+}
+.nav3 .dropdown-content{
+    display: none;
+}
+.nav3 .dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+   background-color: rgb(8, 27, 27);
+   min-width: 150px;
+}
+.nav3 .button{
+    border-radius: 5px;
+
+}
+</style>
+<body>
+    <div class="nav-container">
+        <h1>Variation 1: Horizontal with Dropdown</h1>
+        <nav class="nav3">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">blog</a></li>
+            <li class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+            <a href="#">Products</a>
+            <a href="#">Our story</a>
+            <a href="#">Contact</a>
+            </div>
+          </li>
+          <li class="dropdown">
+          <button>Login</button>
+          <div class="dropdown-content">
+            <a href="#">Sign in</a>
+            <a href="#">Sign
+                up</a>
+          </div>
+          </li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+</body>
+</html>
